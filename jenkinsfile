@@ -1,0 +1,25 @@
+pipeline{
+   agent any
+   stages{
+     stage('Fetching the code from remote repo'){
+         steps {
+           github url
+           }
+        }
+     stage('Build'){
+         steps {
+           job name
+           }
+        }
+     stage('Testing phase') {
+         steps {
+           server
+           }
+        }
+     stage('Deploying phase') {
+         steps {
+           deploy information
+           }
+        }
+     }
+   }
