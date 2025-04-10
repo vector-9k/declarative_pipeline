@@ -8,17 +8,17 @@ pipeline{
         }
      stage('Build'){
          steps {
-           job name
+           echo 'this is build phase'
            }
         }
      stage('Testing phase') {
          steps {
-           server
+           echo 'this is a testing stage'
            }
         }
      stage('Deploying phase') {
          steps {
-           deploy information
+           echo 'deploy information'
            }
         }
      }
